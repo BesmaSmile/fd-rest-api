@@ -15,7 +15,7 @@ async function isRevoked(req, payload, done) {
 
 function jwt() {
   const { secret } = config;
-  return expressJwt({ secret, isRevoked }).unless({
+  return expressJwt({ secret, algorithms: ['HS256'], isRevoked }).unless({
     path: [
       // public routes that don't require authentication
       /^\/api-docs.*/,

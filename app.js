@@ -19,11 +19,12 @@ const userRouter = require('./routes/userRouter');
 const serviceRouter = require('./routes/serviceRouter');
 
 const mongoUrl = process.env.MONGODB_URL;
+console.log(mongoUrl);
 mongoose.connect(mongoUrl, {
-  useCreateIndex: true,
+  // useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
+  // useFindAndModify: false,
 }).then(() => {
   console.log('[*] Database connected...');
   require('./models');
