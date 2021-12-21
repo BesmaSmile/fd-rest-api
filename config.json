@@ -1,0 +1,15 @@
+﻿{
+    "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "firbaseAccount" :{
+      "type": "service_account",
+      "project_id": "bricola-a2662",
+      "private_key_id": "d7773c6f0ae4ec97949766e757a391aa98aeb902",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhgTGaNIK4CDtI\nq5Cr7o9UYXIZLo7IWj28GOsmb5A80GKCXEz5Kv39A42/eVKlv3d6Z+PBi9zJQ8NW\nH+dptyssycM1ukvmtlNMPFDX0a/HQj8VW2NT/9WIhaIM2h03rOgY2TdXv02ZS6Mr\n0FgGdZuAs6ojucwKvGm8LzcQve5SF4a9M181CuchpdRBt1PgYxNoNo7+XFN79sHM\ns9ve6s24LPiqKh6oOA8Rnc5msPQxl/In9q7/m+nBpUG2oGBe/hLf1WN8KdfBSDmi\nEfo815Cz63XtUO09RDCYP+wd5uvkSB17yxT6HJnE50QqBvU16n21WwxD6HvpYuI0\ns9435B4JAgMBAAECggEAEKWe6clSlQ9WgQjZRzf3ML141M8RD01KHWahhVbbCQJB\nI2p47DP2SAVJI4drSH0X7ttYfuM6S0lLVEJKrQ0ujMHgPUkhbUisYYZaWXRLS6Ri\nT8tNS9gpBUkIK3a2jXOgNqViZoHi0pw40XUx6lgoQJoCx1xh6bD7BT9fC0daHokm\nkhar/MjWW8B8TfvqOd9vYP3XsFnu1BAlBiZLFOrqPJ7D/YtsjP6A/ubBRFvks0H6\ngS+PxrAMisoDc9kpprf27KJqBJ7vdnJU3pYWtGMY6o/TK1TbK04SsMFJAoW2rFqb\nbmpalsim1yj7v/WlIBNJSTyswABWeXBDcg6yoHtDmQKBgQD6Xqlrd+CbrbENs3Eq\n3OelGp5QRDP2kBlZAaJL3C08r+cNMQsnOpmv5Nk3JGXqtnz1Zq0xhsLakZKXs4Zj\nx8uF5z1jZXXfyPRbiRa8DzUgNfjh4KPus2WhXMjQWKJSpLeej+AaUb8oAft0/I0u\nN4Mqv/btulLcLl0jI/jrzAYLAwKBgQDmk2M2+BF4Zidb2v0Fd2H3ORroXE63Z70u\nCutmJOxjO6ck6/nr3ufRSjOYrn6gHsln5eZ9P0lHVqvJIhOp1rcROban+/vSbvj/\nLGc50Gjnx3Wb0dVk+OyHdoTg8J6YgQE3AniGZbum5b+GUUciO6ggBvXzvy6glso5\nR9wJAZ7/AwKBgBFlxowLNnZa6XS0RWbfFtGoOdwGAT5e4QQIUwjGcfZHmtyVzdqZ\n/df1JQrp4pMevywmSF6qqJubhf44oVwJpCDX4rIneLtmMWSy7/t9awmj9nlrrLiH\nisZdti6UGiN4ArJn+QCbMZdMG/cTHZRakyjDUhtO2TcnmZ05gLCR6tGVAoGBAMQk\ngPPT1ti63aRwB2lNAxNRiqg7TeMK5o1yUIlVw5kut6La8oFJ353UJ0wstB710ZMG\nqSnGWknLWtsAmAWUV6rZk54W50M9j6dSWIV/2p3AuTVSLNt2PY+GrMbFKcTFiQkI\nmwqJJDZ3npNeNMrUQNLt2O/+pGWLoH9Vt8IZlO2NAoGASGw4BZ06jf85J0Wwwixi\n9nVn/n0XicnLwSCKc5+KVNUNyMNCe4j5ZHc1tDmiCTeGfdMWtKPIf8edXL5IVti/\nQd4MhtssqYllQZ4ffjjvWkfdb6ownQkqFfecg/gLH+WAhDgK53nD2dFPCwH+NZwP\nvHT/CftXQzOlle1zoCs0oBw=\n-----END PRIVATE KEY-----\n",
+      "client_email": "firebase-adminsdk-c40ll@bricola-a2662.iam.gserviceaccount.com",
+      "client_id": "103185637878730571440",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-c40ll%40bricola-a2662.iam.gserviceaccount.com"
+    }
+}
