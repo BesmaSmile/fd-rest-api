@@ -6,14 +6,10 @@ const register = async (req, res, next) => {
     firstname: 'required|string',
     lastname: 'required|string',
     email: 'required|string|email',
-    password: 'required|string|min:8|confirmed|strict',
-    password_confirmation: 'required|string',
+    password: 'required|string',
   };
 
-  await Validator(req.body, validationRule, {
-    confirmed: 'mismatched_password',
-    min: 'short_password',
-  }, (errors, status) => {
+  await Validator(req.body, validationRule, {}, (errors, status) => {
     if (!status) {
       res.status(400)
         .send(errors);

@@ -45,7 +45,7 @@ const swaggerDefinition = {
 const options = {
   swaggerDefinition,
   apis: [
-    './routes/userRouter.js',
+    './doc/user.js',
   ],
 };
 

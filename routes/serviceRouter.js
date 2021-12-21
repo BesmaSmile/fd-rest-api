@@ -10,7 +10,7 @@ const uploadImg = uploadImage('./public/serviceImages/');
 function getServices(req, res) {
   serviceService.getServices()
     .then((result) => res.json(result))
-    .catch((err) => { console.log(err); res.status(err.code).json({ errors: err.errors }); });
+    .catch((err) => { console.log(err); res.status(err.code).json({ error: err.error }); });
 }
 
 function addService(req, res) {
@@ -23,7 +23,7 @@ function addService(req, res) {
   }
   serviceService.addService(service)
     .then((result) => res.json(result))
-    .catch((err) => { console.log(err); res.status(err.code).json({ errors: err.errors }); });
+    .catch((err) => { console.log(err); res.status(err.code).json({ error: err.error }); });
 }
 
 function test(req, res) {

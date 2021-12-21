@@ -7,13 +7,13 @@ const validator = require('../middlewares/userValidator');
 async function register(req, res) {
   userService.register(req.body)
     .then((result) => res.json(result))
-    .catch((err) => { console.log(err); res.status(err.code).json({ errors: err.errors }); });
+    .catch((err) => { console.log(err); res.status(err.code).json({ error: err.error }); });
 }
 
 function login(req, res) {
   userService.login(req.body).then((user) => {
     res.json(user);
-  }).catch((err) => { console.log(err); res.status(err.code).json({ errors: err.errors }); });
+  }).catch((err) => { console.log(err); res.status(err.code).json({ error: err.error }); });
 }
 
 router.post('/login', validator.login, login);

@@ -17,12 +17,12 @@ function register(_user) {
     
   const token = jwt.sign({ sub: user._id }, config.secret);
   return {
-    _id: user._id,
+    ...user._doc,
     token,
   };
   }).catch((err) => {
     console.log(err);
-    throw { code: 500, errors: 'internal_error' };
+    throw { code: 500, error: 'internal_error' };
   });
 }
 
@@ -32,17 +32,17 @@ async function login({ email, password }) {
   if (user && bcrypt.compareSync(password, user.hash)) {
     const token = jwt.sign({ sub: user._id }, config.secret);
     return {
-      _id: user._id,
+      ...user._doc,
       token,
     };
-  } throw { code: 403, errors: 'incorrect_credentials' };
+  } throw { code: 403, error: 'incorrect_credentials' };
 }
 
 async function getUserById(id) {
   const user = await db.User.findById(id).exec()
     .catch((err) => {
       console.log(err);
-      throw { code: (500), errors: 'internal_error' };
+      throw { code: (500), error: 'internal_error' };
     });
   return user;
 }
