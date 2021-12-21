@@ -38,14 +38,14 @@ const swaggerDefinition = {
     title: 'REST API',
     version: '1.0.0',
   },
-  host: process.env.NODE_ENV === 'dev' ? 'mysterious-escarpment-36107.herokuapp.com' : 'localhost:4000',
+  host: process.env.NODE_ENV === 'dev' ? 'fd-rest-api.herokuapp.com' : 'localhost:4000',
   basePath: '/',
 };
 
 const options = {
   swaggerDefinition,
   apis: [
-    './routes/partnerRouter.js',
+    './routes/userRouter.js',
   ],
 };
 
